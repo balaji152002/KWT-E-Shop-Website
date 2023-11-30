@@ -1,0 +1,191 @@
+
+body{
+  background-image:  url('https://img.freepik.com/premium-photo/nuts-dried-fruits-assortment-healthy-snacks-dried-apricots-figs-raisins-pecans-walnuts-hazelnuts-almonds-other-brown-table-background_630207-1786.jpg?w=740');
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #664439;
+  backface-visibility: visible;
+  margin:0;
+  height:100vh;
+  
+  
+}
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+.imgtext{
+  width:30em;
+  display:inline-block;
+  position:absolute;
+  color:white;
+  padding-left:10px;
+  padding-top: 5px;
+  font-family: 'Rajdhani' ;
+  font-size: 15px;
+}
+
+
+.container{
+  font-family: arial;
+  font-size: 42px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height:60px;
+  margin-top: 40px;
+  margin-left: 160px;
+  margin-right: 160px;
+  color: white;
+  filter:drop-shadow(8px 5px 2px black);
+  }
+
+  .desc{
+    font-family: robato;
+  font-size:17px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height:60px;
+  margin-top: -15px;
+  margin-left: 160px;
+  margin-right: 190px;
+  color: white;
+  filter:drop-shadow(8px 5px 2px black);
+  
+  }
+
+  .shopbutton{
+    border-radius: 7px;
+    background: linear-gradient(250deg, #88523c, #292321);
+    color: white;
+    padding:20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Rajdhani',sans-serif;
+    width: 310px;
+    font-size: 18px;
+    font-weight:700;
+    cursor: pointer;
+    border: none;
+    margin-top: 140px;
+    margin-left: 516px;
+    margin-right: 190px;
+    position: static;
+    opacity: 90%;
+
+  }
+
+  .shopbutton span {
+    position: relative;
+    transition: 400ms;
+}
+
+.shopbutton span::after {
+    content: '\00bb';
+    position: absolute; 
+    opacity: 0;
+    top: 0;
+    right: 30px;
+    transition: 500ms;
+}
+
+.shopbutton:hover span {
+    padding-right: 18px;
+}
+
+.shopbutton:hover span::after {
+    opacity: 1;
+    right: 0;
+}
+
+.scrtext{
+  background-image:linear-gradient(to right,#292321,#88523c) ;
+  height: 58px;
+  color: white;
+  font-family: 'Rajdhani',sans-serif;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  opacity: 40%;
+  margin-top: 90px;
+}
+
+
+  
+
+/*--------------------------------------------------------------*/
+
+
+@media screen and (max-width:1200px)
+{
+  background-image{
+    background-size: contain;
+    height: 100%;
+  }
+  .container{
+    background-size: cover;
+    display: flex;
+    font-size: 30px;
+    height:90px;
+    margin-left:40px;
+    margin-right:40px;
+    scroll-behavior: none;
+
+
+  }
+  .desc{
+    background-size: cover;
+    display: flex;
+    font-size: 14px;
+    height:80px;
+    margin-left:40px;
+    margin-right:40px;
+    scroll-behavior: none;
+    margin-top:-40px;
+  }
+  .shopbutton{
+    width:230px;
+    margin-left: 30%;
+    margin-top: 30px;
+    background-size: cover;
+  }
+  
+}
+
+@media screen and (max-width:992px)
+{
+  .container{
+    background-size: cover;
+    display: flex;
+    font-size: 20px;
+    height:80px;
+    margin-left:40px;
+    margin-right:40px;
+    scroll-behavior: none;
+  }
+  .desc{
+     background-size: cover;
+    display: flex;
+    font-size: 12px;
+    height:80px;
+    margin-left:40px;
+    margin-right:40px;
+    scroll-behavior: none; 
+    margin-top:-50px;
+  }
+  #navbar{
+    margin-left: 0px;
+  }
+  .shopbutton{
+    width:230px;
+    margin-left: 28%;
+    margin-top: 10px;
+    background-size: cover;
+  }
+   
+}
+
